@@ -157,16 +157,16 @@ public class OneClickPlugin extends Plugin
 				break;
 		}
 	}
-
+	
 	@Subscribe
 	public void onGameTick(GameTick event)
 	{
 		tick = false;
-
+		
 		if (type == Types.BA_HEALER)
 		{
 			Widget widget = client.getWidget(WidgetInfo.BA_HEAL_LISTEN_TEXT);
-
+			
 			if (widget != null && widget.getText() != null)
 			{
 				roleText = widget.getText().trim();
